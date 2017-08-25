@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/master.css"/>
+</head>
+
+<body>
+  <div class="nav-btn">
+      <a href="#" class="a-btn">
+          <span class="span-btn" id="ospan">
+              <ul class="ulbtn ">
+                  <li>球衣</li>
+                  <li>球裤</li>
+                  <li>T-shirt</li>
+                  <li>球鞋</li>
+                  <li>科比专区</li>
+              </ul>
+          </span>
+      
+   </a>
+      
+  </div>
+   
+</body>
+<script src="js/jQuery%203.2.1.js"></script>
+<script>
+    $(document).ready(function(){
+//        var demo = $('.a-btn');
+       $('.a-btn').hover(function(){
+            $('.ulbtn').slideToggle();
+        })
+        
+    })
+    
+</script>
+</html>

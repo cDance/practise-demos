@@ -1,0 +1,82 @@
+@charset "uft-8 ";
+/*重置样式 可以覆盖*/
+body,div,p,ul,ol,dl,dt,dd,li,form,input,table,th,td,img,h1,h2,h3,h4,h5,h6 { margin: 0;padding: 0;}
+
+
+body { background: #FFF; color: #000; font-size: 12px; font-style: normal; font-family:'Microsoft Yahei','寰蒋闆呴粦','Simsun','瀹嬩綋','Arial', sans-serif;}
+em, b, i { font-style:normal;}
+li { list-style:none;}
+img { border:none;}
+a { text-decoration:none; color:#244666;}
+a:hover { text-decoration:underline; color:#f50;}
+table { border-spacing:0; border-collapse:collapse;}
+* {
+    margin: 10px auto;
+}
+
+/*通用*/
+.hide {display: none;}
+.flt {float:left;}
+.frt {float:right;}
+.clear { clear: both;}
+.clearfix { *zoom: 1;} 
+.clearfix:before, .clearfix:after { display: table; line-height: 0; content: "";}
+.clearfix:after { clear: both;}
+
+.ml10 {margin-left: 10px;}
+.ml20 {margin-left: 20px;}
+.ml28 {margin-left: 28px;   /*这里通用的属性可以放上面*/}
+.mr20 {margin-right: 20px;}
+.mt10 {margin-top: 10px;}
+.mt20 {margin-top: 20px;}
+.mt30 {margin-top: 30px;}
+.mt15 {margin-top: 15px;}
+.mb10 {margin-bottom: 10px;}
+.pt10 {padding-top: 10px;}
+.pt20 {padding-top: 20px;}
+
+
+
+/*正常的hover事件*/
+.hide {
+    display: none;
+}
+
+.nav-btn {
+   
+}
+.a-btn {
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 30px;
+    background: #08c;
+    background: url(/images/nbastore.png) no-repeat #08e center;
+}
+
+.nav-btn ul {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+.nav-btn ul li {
+/*    float: left;*/
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #002f50;
+    color: #fff;
+}
+.nav-btn ul li:hover {
+    background: #08c;
+}
+
+
+/*当鼠标hover时显示*/
+/*
+.nav-btn a:hover .ulbtn{
+    display: block;
+}
+ */
