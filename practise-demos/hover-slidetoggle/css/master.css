@@ -42,37 +42,69 @@ table { border-spacing:0; border-collapse:collapse;}
     display: none;
 }
 
-.nav-btn {
+div .nav-btn {
    
 }
 .a-btn {
     position: relative;
     display: block;
-    width: 100px;
+    width: 95px;
     height: 30px;
     background: #08c;
-    background: url(/images/nbastore.png) no-repeat #08e center;
+    background: url(/images/nbastore.png) no-repeat #08e left;
 }
+
+/*
+.a-btn .up {
+    background: url(../css/images/triangle_down_new_d66543.png) no-repeat #08e left;
+}
+*/
+
+
 
 .nav-btn ul {
     display: none;
     position: absolute;
-    top: 30px;
-    left: 0;
+    top: 50px;
+    left: 673px;
 }
 .nav-btn ul li {
 /*    float: left;*/
-    width: 100px;
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
+    padding-left: 15px;
+    width: 80px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: left;
     background: #002f50;
     color: #fff;
 }
 .nav-btn ul li:hover {
-    background: #08c;
+    background: #2464b5;
 }
 
+.a-btn .up {
+    display: inline-block;
+    float: right;
+    margin-top: 12px;
+    width: 9px;
+    height: 6px;
+    background: #60c;
+    background: url(images/triangle_down_new_d66543.png) no-repeat;
+}
+.a-btn .down {
+    display: inline-block;
+    float: right;
+    margin-top: 12px;
+    width: 9px;
+    height: 6px;
+    background: #60c;
+    background: url(images/triangle_up_new_d66543.png) no-repeat;
+}
+
+.up {
+    
+}
 
 /*当鼠标hover时显示*/
 /*

@@ -9,30 +9,32 @@
 <body>
   <div class="nav-btn">
       <a href="#" class="a-btn">
-          <span class="span-btn" id="ospan">
-              <ul class="ulbtn ">
-                  <li>球衣</li>
-                  <li>球裤</li>
-                  <li>T-shirt</li>
-                  <li>球鞋</li>
-                  <li>科比专区</li>
-              </ul>
-          </span>
-      
-   </a>
-      
+         <i id="oi" class="up"></i>
+      </a>
+      <ul class="ulbtn ">
+          <li>球衣</li>
+          <li>球裤</li>
+          <li>T-shirt</li>
+          <li>球鞋</li>
+          <li>科比专区</li>
+          <li>库里专区</li>
+      </ul>      
   </div>
    
 </body>
 <script src="js/jQuery%203.2.1.js"></script>
 <script>
     $(document).ready(function(){
-//        var demo = $('.a-btn');
-       $('.a-btn').hover(function(){
-            $('.ulbtn').slideToggle();
-        })
-        
-    })
-    
+      
+    $('.a-btn').hover(function(){
+	//鼠标放上去执行某动作  
+	$('.ulbtn').stop().slideDown();
+    $('#oi').attr('class','down'); 
+	},function(){
+	//鼠标移开的时候执行某个动作
+	 $('.ulbtn').stop().slideUp();
+     $('#oi').attr('class','up'); 
+	});
+});
 </script>
 </html>
