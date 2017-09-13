@@ -1,0 +1,5 @@
+*{margin:0;padding:0;}
+#nav-wrap{height:1900px;background:#FC0;margin-top:40px;position:relative;}
+#nav{height:60px;background:#0F9;display: none; width:100%;}
+#nav li{float:left;width:20%;line-height:60px;text-align:center;list-style:none;}
+#nav li:hover{background:#F90;}

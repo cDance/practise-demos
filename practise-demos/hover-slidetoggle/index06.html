@@ -11,8 +11,8 @@
       <a href="#" class="a-btn">
          <i id="oi" class="up"></i>
       </a>
-      <ul class="ulbtn ">
-          <li>球衣</li>
+      <ul class="ulbtn" style="display: none;">
+          <li><a>球衣</a></li>
           <li>球裤</li>
           <li>T-shirt</li>
           <li>球鞋</li>
@@ -20,21 +20,28 @@
           <li>库里专区</li>
       </ul>      
   </div>
-   
 </body>
 <script src="js/jQuery%203.2.1.js"></script>
 <script>
     $(document).ready(function(){
-      
-    $('.a-btn').hover(function(){
-	//鼠标放上去执行某动作  
-	$('.ulbtn').stop().slideDown();
-    $('#oi').attr('class','down'); 
-	},function(){
-	//鼠标移开的时候执行某个动作
-	 $('.ulbtn').stop().slideUp();
-     $('#oi').attr('class','up'); 
-	});
+        $('.a-btn').hover(function(){
+            //鼠标放上去执行某动作  
+            
+            $('#oi').attr('class','down'); 
+            $('.ulbtn').stop(false).slideDown();
+            
+        },function(){
+            //鼠标移开的时候执行某个动作
+           
+            $('#oi').attr('class','up'); 
+            $('.ulbtn').stop(false).slideUp();
+
+        });
 });
+
+    
+
+    
+    
 </script>
 </html>

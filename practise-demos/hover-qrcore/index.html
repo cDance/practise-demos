@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    div ul li{
+        position: relative;
+        margin-left: 10px;
+        float: left;
+        list-style: none;
+        cursor: pointer;
+        color: green;
+        width: 200px;
+        height: 200px;
+        background: green;
+    } 
+    div ul li> img{
+        position: absolute;
+        top: 200px;
+        left: 0;
+        width: 200px;
+        height:  200px;
+        background: #ccc;
+        display: none;
+    }
+</style>
+<body>
+    <div id="div1">
+        <ul id="ul1">
+            <li><img/></li>
+            <li><img/></li>
+            <li><img/></li>
+            <li><img/></li>
+            <li><img/></li>
+            <li><img/></li>
+        </ul>
+    </div>
+</body>
+<script>
+    window.onload=function(){
+        
+        var aLi=document.getElementsByTagName("ul")[0].getElementsByTagName("li");
+        var aImg=document.getElementById("ul1").getElementsByTagName("img");
+//        alert(aLi.length);
+//        alert(aImg.length);
+        var i=0;
+        for(i=0;i<aLi.length;i++){
+            aLi[i].index=i;   //索引
+            aLi[i].onmouseover=function(){
+                
+                aImg[this.index].style.display='block';
+            }
+        }
+        for(i=0;i<aLi.length;i++){
+//            aLi[i].index=i;  
+            aLi[i].onmouseout=function(){
+                
+                aImg[this.index].style.display='none';
+            }
+        }
+        
+    }
+    
+</script>
+</html>

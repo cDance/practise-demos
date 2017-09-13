@@ -38,35 +38,28 @@ table { border-spacing:0; border-collapse:collapse;}
 
 
 /*正常的hover事件*/
-.hide {
-    display: none;
-}
 
-div .nav-btn {
+.nav-btn {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 80px;
+    height: 40px;
    
 }
 .a-btn {
-    position: relative;
     display: block;
     width: 95px;
     height: 30px;
-    background: #08c;
+/*    background: #08c;*/
     background: url(/images/nbastore.png) no-repeat #08e left;
 }
 
-/*
-.a-btn .up {
-    background: url(../css/images/triangle_down_new_d66543.png) no-repeat #08e left;
-}
-*/
-
-
-
 .nav-btn ul {
-    display: none;
+/*    display: none;*/
     position: absolute;
-    top: 50px;
-    left: 673px;
+    top: 30px;
+    left: 0px;
 }
 .nav-btn ul li {
 /*    float: left;*/
@@ -79,6 +72,8 @@ div .nav-btn {
     background: #002f50;
     color: #fff;
 }
+
+
 .nav-btn ul li:hover {
     background: #2464b5;
 }
