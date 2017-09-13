@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    div ul li{
+        position: relative;
+        margin-left: 10px;
+        float: left;
+        list-style: none;
+        cursor: pointer;
+        color: green;
+        width: 200px;
+        height: 200px;
+        background: green;
+    } 
+    div ul li> img{
+        position: absolute;
+        top: 200px;
+        left: 0;
+        width: 200px;
+        height:  200px;
+        background: #ccc;
+        display: none;
+    }
+</style>
+<body>
+    <div id="div1">
+        <ul id="ul1">
+            <li><img /></li>
+            <li><img /></li>
+            <li><img /></li>
+            <li><img /></li>
+            <li><img /></li>
+            <li><img /></li>
+            
+        </ul>
+    </div>
+</body>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script>
+   
+    $(function(){
+        var a=$('#div1 li');
+//        alert(a.index());
+        var b=$('#ul1 img');
+//        alert(b.length);
+        
+//            $('#div1 li:eq(2)').on('mouseover',function(){
+//                
+////                $('#ul1 img:eq(2)').css('display','block');
+//                $('#ul1 img:eq(2)').slideToggle(5000);
+//                
+//            })
+        
+        $('ul').find('li').mouseover(function(){
+            
+//            $('img').eq($(this).index()).css('display','block');
+//            alert($(this).index());
+            $('img').eq($(this).index()).stop().slideDown();
+             
+        })
+        $('ul').find('li').mouseout(function(){
+            
+//            $('img').eq($(this).index()).css('display','none');
+            $('img').eq($(this).index()).stop().slideUp();
+//            alert($(this).index());
+             
+        }) 
+    })
+</script>
+
+</html>
