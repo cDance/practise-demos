@@ -37,10 +37,9 @@ table { border-spacing:0; border-collapse:collapse;}
 
 
 
-/*正常的hover事件*/
 
 .nav-btn {
-    display: block;
+/*    display: block;*/
     margin: 0 auto;
     position: relative;
     width: 80px;
@@ -48,35 +47,46 @@ table { border-spacing:0; border-collapse:collapse;}
    
 }
 .a-btn {
-    display: block;
+    display: inline-block;
     width: 95px;
     height: 30px;
-/*    background: #08c;*/
     background: url(/images/nbastore.png) no-repeat #08e left;
 }
 
+
 .nav-btn ul {
-/*    display: none;*/
+    display: none;
     position: absolute;
-    top: 30px;
+    top: 40px;
     left: 0px;
+    border-radius: 5px;
 }
 .nav-btn ul li {
 /*    float: left;*/
     padding-left: 15px;
     width: 80px;
     height: 40px;
-    font-size: 14px;
+    color: #fff;
     line-height: 40px;
     text-align: left;
-    background: #002f50;
-    color: #fff;
+    background: #002f50;  
 }
-
 
 .nav-btn ul li:hover {
     background: #2464b5;
 }
+
+.nav-btn ul li a {
+    color: #fff;
+    font-size: 14px;
+    
+}
+
+.nav-btn ul li a:hover {
+    text-decoration: none;
+}
+
+
 
 .a-btn .up {
     display: inline-block;

@@ -16,7 +16,7 @@
         height: 200px;
         background: green;
     } 
-    div ul li> img{
+    div ul li>img{
         position: absolute;
         top: 200px;
         left: 0;
@@ -59,7 +59,7 @@
             
 //            $('img').eq($(this).index()).css('display','block');
 //            alert($(this).index());
-            $('img').eq($(this).index()).stop().slideDown();
+            $('ul img').eq($(this).index()).stop().slideDown();
              
         })
         $('ul').find('li').mouseout(function(){

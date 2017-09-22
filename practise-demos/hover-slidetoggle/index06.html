@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,32 +13,76 @@
       <a href="#" class="a-btn">
          <i id="oi" class="up"></i>
       </a>
-      <ul class="ulbtn" style="display: none;">
+      <ul class="ulbtn" >
           <li><a>球衣</a></li>
-          <li>球裤</li>
-          <li>T-shirt</li>
-          <li>球鞋</li>
-          <li>科比专区</li>
-          <li>库里专区</li>
+          <li><a>球裤</a></li>
+          <li><a>T-shirt</a></li>
+          <li><a>球鞋</a></li>
+          <li><a>科比专区</a></li>
+          <li><a>库里专区</a></li>
       </ul>      
   </div>
 </body>
 <script src="js/jQuery%203.2.1.js"></script>
 <script>
     $(document).ready(function(){
+        
+        var timer=null;
         $('.a-btn').hover(function(){
             //鼠标放上去执行某动作  
             
-            $('#oi').attr('class','down'); 
-            $('.ulbtn').stop(false).slideDown();
+            
+            clearInterval(timer);
+                setTimeout(function (){
+                    $('#oi').attr('class','up'); 
+                    $(".ulbtn").stop().slideDown(200);
+		        }, 300);
             
         },function(){
             //鼠标移开的时候执行某个动作
            
-            $('#oi').attr('class','up'); 
-            $('.ulbtn').stop(false).slideUp();
+            
+            clearInterval(timer);
+                setTimeout(function (){
+                    $('#oi').attr('class','down'); 
+                    $(".ulbtn").stop().slideUp(200);
+		        }, 300);
 
         });
+        
+        
+        $('.ulbtn').hover(function(){
+             
+            clearInterval(timer);
+                setTimeout(function (){
+                    $('#oi').attr('class','up');  
+                    $(".ulbtn").stop().slideDown(300);
+            
+		        }, 300);
+            
+        },function(){
+             
+            clearInterval(timer);
+                setTimeout(function (){
+                    $('#oi').attr('class','down');
+                    $(".ulbtn").stop().slideUp(300);
+		        }, 300);
+
+        });
+        
+        
+//        var timer=null;
+//        $('.a-btn').mouseover(function(){
+//            $('#oi').attr('class','up'); 
+//            
+//            setTimeout(function(){
+//                
+//                $(".ulbtn").stop().slideDown();
+//            },300),
+//            
+//        });
+//        
+        
 });
 
     

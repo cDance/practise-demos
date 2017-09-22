@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        position: relative;
+    }
+    div a {
+        
+        display: block;
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        color: #fff;
+        text-align: center;
+        background: #08c;
+        text-decoration: none;
+    }
+    ul{
+        display: none;
+        position: absolute;
+        top: 20px;
+        left: -30px;
+    }
+    ul li {
+        list-style: none;
+        width: 100px;
+        height: 30px;
+        background: #ccc;
+    }
+</style>
+<body>
+   <div>
+       
+      <a href="#">hover我</a> 
+      
+   </div>
+      <ul>
+          <li><a>22</a></li>
+          <li><a>33</a></li>
+          <li><a>33</a></li>
+          <li><a>44</a></li>
+          <li><a>33</a></li>
+      </ul>
+    
+</body>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script>
+    $(function(){
+        $("div").hover(
+            function () {
+                $('ul').show();
+            },
+            function () {
+                $('ul').hide();
+            }
+        );
+    })
+    
+</script>
+
+</html>
