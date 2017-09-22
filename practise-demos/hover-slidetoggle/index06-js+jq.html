@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/master.css"/>
+</head>
+
+<body>
+  <div class="nav-btn">
+      <a href="#" class="a-btn">
+         <i id="oi" class="up"></i>
+      </a>
+      <ul class="ulbtn" >
+          <li><a>球衣</a></li>
+          <li><a>球裤</a></li>
+          <li><a>T-shirt</a></li>
+          <li><a>球鞋</a></li>
+          <li><a>科比专区</a></li>
+          <li><a>库里专区</a></li>
+      </ul>      
+  </div>
+</body>
+<script src="js/jQuery%203.2.1.js"></script>
+<script>
+        //
+    window.onload=function(){
+        var oA=document.getElementsByClassName("a-btn")[0];
+        var oUl=document.getElementsByClassName("ulbtn")[0];
+        var oI=document.getElementsByTagName("i")[0];
+        var timer=null;
+        
+        oA.onmouseover=oUl.onmouseover=function(){
+            clearTimeout(timer);
+            setTimeout(function (){
+                oI.className="up";
+                $(".ulbtn").stop().slideDown(150);
+		    }, 300);
+        };
+        oA.onmouseout=oUl.onmouseout=function(){
+            clearTimeout(timer);
+            setTimeout(function (){
+                oI.className="down";
+                $(".ulbtn").stop().slideUp(150);
+		    }, 300);
+        }
+    }
+        
+        
+        
+
+
+    
+
+    
+    
+</script>
+</html>
