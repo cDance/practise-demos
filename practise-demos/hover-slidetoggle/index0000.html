@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <img src="images/1.png" border="1" />
+<!--    <img src="2.jpg" border="1" />-->
+
+    <div><h2><a><i>213213</i></a></h2></div>
+</body>
+<script src="js/jQuery%203.2.1.js"></script>
+<SCRIPT LANGUAGE="JavaScript">
+//    function setImg(img,width,height){
+//        var scale_w=img.width/width;
+//        var scale_h=img.height/height;
+//        var scale=scale_w>scale_h?scale_w:scale_h;
+//        img.width=img.width/scale;
+//    return false;
+//}
+
+function setImg(obj1,width,height){
+        var w=obj1.width/width;
+        var h=obj1.height/height;
+    return w;
+    return h;
+    
+}
+    
+</SCRIPT>
+<script type="text/javascript">
+$(document).ready(function(){
+//    $("img").mouseover(function(){
+//        setImg(this,100,100);
+//    });
+//   //    js:
+//    obj1.mouseover=function(){
+//        setImg(this,100,200);
+//    }
+//    //首先这个this是 当前对象，如果在jq，那就是选择器
+//    //   jq:
+//    $("img").mouseout(function(){
+//        setImg(this,200,200);         
+//    });
+    $("div h2 a i").one("click",function(){
+        
+        $(this).append("<li>2222</li>");
+    })
+});
+</script>
+
+</html>
