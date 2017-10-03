@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    * td {margin: 0; padding: 0;font-size: 0; border: 0;}
+    tr {font-style: normal;font-size: 0px;}
+    
+    table {
+         width: 280px;  
+         border-collapse:collapse;
+    }
+    tr {
+        background: none;
+        height: 30px;
+        line-height: 15px;
+        text-align: center;
+    }
+    tr th{
+        font-size:15px;
+        font-weight: normal;
+    }
+    
+    tr td {
+        font-size: 14px;
+/*        font-weight: 700;*/
+    }
+    tr td img {
+        width: 30px;
+        height: 30px;
+        background: #09c;
+    }
+    
+    .gray {
+        background: #DCDCDC;
+    }
+    .blue-border {
+        border-bottom: 1px solid #08c;
+    }
+    .gray1 {
+        background: #DCDCDC;
+    }
+    .gray2 {
+        background: #D3D3D3;
+        opacity: 30;
+    }
+    .bold {
+        font-weight: bold;
+    }
+    #none{
+        background: none;
+    }
+</style>
+<body >
+    <table id="oTable" border="0" style="margin: 0 auto;background: green;">
+        <tr id="none"> 
+            <th>排名</th>
+            <th>球队</th>
+            <th>胜</th>
+            <th>负</th>
+            <th>胜场差</th>
+            
+        </tr>
+        <tr>
+            <td class="td1" name="td1">01</td>
+            <td>016785</td>
+            <td>0421324</td>
+            <td>04rerw24</td>
+            <td>04rujh24</td>
+        </tr>
+        <tr>
+            <td name="td2">01</td>
+            <td>016785</td>
+            <td>0421324</td>
+            <td>04rerw24</td>
+            <td>04rujh24</td>
+        </tr>
+        <tr>
+            <td name="td1">01</td>
+            <td>016785</td>
+            <td>0421324</td>
+            <td>04rerw24</td>
+            <td>04rujh24</td>
+        </tr>
+        <tr>
+            <td class="c1" name="td2">01</td>
+            <td>016785</td>
+            <td>0421324</td>
+            <td>04rerw24</td>
+            <td>04rujh24</td>
+        </tr>
+        
+    </table>
+    <p>你现在的坐标是：<span></span></p>
+</body>
+<script src="js/jQuery%203.2.1.js"></script>
+<!--<script src="ajax-nba.js"></script>-->
+<script>
+//    var aTr=document.getElementsByTagName("tr");
+//    for(var i=0;i<aTr.length;i++){
+//        
+//        if(i%2==1){
+//            aTr[i].style.background="#ccc";
+//        }
+//        else {
+////            aTr[i].style.background="#a09494";
+//        }
+//    }
+//    var aTd_Green=document.getElementsByName('td1');
+//    for(var i=0;i<aTd_Green.length;i++){
+//        aTd_Green[i].style.backgroundColor="green";
+//    }
+//    SS
+//    var aTd_Yellow=document.getElementsByName('td2');
+//    for(var i=0;i<aTd_Yellow.length;i++){
+//        aTd_Yellow[i].style.backgroundColor="yellow";
+//    }
+//    
+//   
+//    $('.td1').next('td').css();
+//    $('td').has('.c1').html('2121');
+//    var aTr_js=document.getElementsByTagName("td")[2];
+//    alert(aTr_js);
+//    var aTr_jq=$('tr').find('td').eq(2);
+//    alert(aTr_js);
+    
+//    $('<div>你大爷的</div>').appendTo($('td'));
+    
+   $(document).ready(function(){
+      $('table').hover(function(){
+          
+          $(this).animate({
+              width: '100px',
+              height: '400px',
+              marginLeft: '50',
+              margintop: '50',  
+              
+          })
+      },function(){
+              
+          $(this).animate({
+              width: '500',
+              height: '100',
+          })
+      });
+   });
+
+</script>
+
+</html>

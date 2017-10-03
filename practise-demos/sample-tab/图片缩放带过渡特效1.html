@@ -1,0 +1,253 @@
+<!DOCTYPE html>  
+<html>  
+    <head>  
+        <meta charset="UTF-8">  
+        <title></title>  
+        <style type="text/css"> 
+            /*重置样式*/
+            *{ margin: 0 auto; list-style: none; font-size: 14px;}
+            i,b {font-style: normal;}
+            .content {
+                width: 1200px;
+                margin: 0 auto;
+            }
+            .tab-wrap{
+                width：1200px;
+                height: 561px;
+            }
+            .nav-tab {
+                margin-left: 10px;
+                display: inline-block;
+                margin-top: 50px;
+                width: 1200px;
+                height: 39px;
+                border-bottom: 1px solid #ccc;
+            }
+            .nav-tab .video-logo {
+                padding:0px 70px 0px 35px;
+                float: left;
+                color: #2464b5;
+                line-height: 40px;
+                font-size: 22px;
+                text-align: center;
+                background: url(css/images/video-title-ico.png) no-repeat left center;
+            }
+            .tab-wrap .active{
+                border-bottom: 3px solid red;
+            }
+            .nav-tab span {
+                float: left;
+                width: 120px;
+                height: 36px;
+                line-height: 36px;
+                font-size: 16px;
+                text-align: center;
+                cursor: pointer;
+                
+            }
+            .nav-tab a {
+                float: right;
+                height: 36px;
+                line-height: 36px;
+                font-size: 16px;
+                text-align: center;
+                cursor: pointer;
+                
+            }
+            
+            .video_img_tra {width: 1220px; height: 550px;  display: none;}
+            .video_img_tra li {
+                float: left;
+                width: 285px;  
+                height: 250px;
+                margin: 10px 10px; 
+            }
+            .video_img_tra a {  
+                position: relative;
+                float: left;
+                width: 285px;  
+                height: 230px;  
+            }
+            
+            .video_img_tra a .img-wrap {
+                width: 285px;  
+                height: 230px;
+                overflow: hidden;
+                
+            }
+            .video_img_tra a img {  
+/*                cursor: pointer;  */
+                transition: all 0.6s;  
+            }  
+            .video_img_tra a img:hover {  
+                transform: scale(1.1);  
+            }
+            .video_img_tra a i {
+/*                display:inline-block;*/
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                width: 285px;
+                height: 50px;
+                line-height: 65px;           /*非规则行高*/
+                color: #fff;
+/*                vertical-align: middle;*/
+                background: url(mask-bg_f650a0.png) no-repeat;
+                
+            }
+            .video_img_tra div i b {
+                padding-left: 100px;
+                float: left;
+                width: 50px;
+                height: 50px;
+/*                vertical-align: middle;*/
+                z-index: 10;
+                background: url(icon_16_video_white_c131c8.png) no-repeat 20px 25px;
+            }
+            .video_img_tra a  .news-title {
+                display: inline-block;
+                float: left;
+                width: 285px;
+                height: 40px;
+                line-height: 40px;
+                color: black;
+            }
+        </style>  
+    </head>  
+    <body> 
+     <div class="tab-wrap content " id="tab-wrap">
+         <div class="nav-tab">
+             <div>
+                 <i class="video-logo">视频</i>
+             </div>
+             <span class="active" >比赛</span>
+             <span>最佳</span>
+             <span>专题</span>
+             <a href="#">更多>></a>
+          </div>
+          
+         <div class="video_img_tra" style="display: block;">
+             <li>
+                  <a href="http://baidu.com" target="_parent">
+                      <div class="img-wrap">
+                          <img src="specialtopic01.jpg" />
+                           <i class="icon">
+                             <b></b>
+                              2017-08-24 18:30 
+                           </i>
+                      </div>
+                      <span class="news-title">此元素可告知浏览器其自身是一</span>    
+                   </a>
+              </li>
+              <li>
+                  <a href="http://baidu.com" target="_parent">
+                      <div class="img-wrap">
+                          <img src="specialtopic01.jpg" />
+                           <i class="icon">
+                             <b></b>
+                              2017-08-24 18:30 
+                           </i>
+                      </div>
+                      <span class="news-title">afasfaasdsadasdaf</span>    
+                   </a>
+              </li>
+              <li>
+                  <a href="http://baidu.com" target="_parent">
+                      <div class="img-wrap">
+                          <img src="specialtopic01.jpg" />
+                           <i class="icon">
+                             <b></b>
+                              2017-08-24 18:30 
+                           </i>
+                      </div>
+                      <span class="news-title">afasfaasdsadasdaf</span>    
+                   </a>
+              </li>
+              <li>
+                  <a href="http://baidu.com" target="_parent">
+                      <div class="img-wrap">
+                          <img src="specialtopic01.jpg" />
+                           <i class="icon">
+                             <b></b>
+                              2017-08-24 18:30 
+                           </i>
+                      </div>
+                      <span class="news-title">afasfaasdsadasdaf</span>    
+                   </a>
+              </li>
+              <li>
+                  <a href="http://baidu.com" target="_parent">
+                      <div class="img-wrap">
+                          <img src="specialtopic01.jpg" />
+                           <i class="icon">
+                             <b></b>
+                              2017-08-24 18:30 
+                           </i>
+                      </div>
+                      <span class="news-title">afasfaasdsadasdaf</span>    
+                   </a>
+              </li>
+              <li>
+                  <a href="http://baidu.com" target="_parent">
+                      <div class="img-wrap">
+                          <img src="specialtopic01.jpg" />
+                           <i class="icon">
+                             <b></b>
+                              2017-08-24 18:30 
+                           </i>
+                      </div>
+                      <span class="news-title">afasfaasdsadasdaf</span>    
+                   </a>
+              </li>
+              <li>
+                  <a href="http://baidu.com" target="_parent">
+                      <div class="img-wrap">
+                          <img src="specialtopic01.jpg" />
+                           <i class="icon">
+                             <b></b>
+                              2017-08-24 18:30 
+                           </i>
+                      </div>
+                      <span class="news-title">afasfaasdsadasdaf</span>    
+                   </a>
+              </li>
+              <li>
+                  <a href="http://baidu.com" target="_parent">
+                      <div class="img-wrap">
+                          <img src="specialtopic01.jpg" />
+                           <i class="icon">
+                             <b></b>
+                              2017-08-24 18:30 
+                           </i>
+                      </div>
+                      <span class="news-title">afasfaasdsadasdaf</span>    
+                   </a>
+              </li> 
+        </div> 
+        <div class="video_img_tra"></div>
+        <div class="video_img_tra"></div>
+<!--        <div class="video_img_tra"></div>-->
+     
+     </div>
+      
+    </body>  
+    <script>
+        var aSpan=document.getElementsByClassName("nav-tab")[0].getElementsByTagName("span");
+        var aDiv=document.getElementById("tab-wrap").getElementsByClassName("video_img_tra");
+//        alert(aDiv.length);
+        
+        for(var i=0;i<aSpan.length;i++){
+            aSpan[i].index=i;
+            aSpan[i].onclick=function(){
+                
+                for(var i=0;i<aDiv.length;i++){
+                    aSpan[i].className=" ";
+                    aDiv[i].style.display="none";
+                    
+                }
+            this.className="active";
+            aDiv[this.index].style.display="block";    
+            }
+        }
+    </script>
+</html>  

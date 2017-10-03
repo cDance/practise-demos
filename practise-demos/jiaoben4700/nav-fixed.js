@@ -1,17 +1,17 @@
 //定位菜单
 $(function(){
-	var a = $('#nav'),
-		b =a.offset();
+	var oNav = $('#nav'),
+		oNav_SH =oNav.offset();
 	$(document).on('scroll',function(){
-		var	c = $(document).scrollTop();
+		var	oDoc_SH = $(document).scrollTop();
 //        alert(c);
-		if(c>=80)
+		if(oDoc_SH>=80)
         {
-            a.css({'position':'fixed','top':'0px','display':'block'})
+            oNav.css({'position':'fixed','top':'0px','display':'block'})
         }
         else
         {
-            a.css({'display':'none'})
+            oNav.css({'display':'none'})
         }
 		})
 	})

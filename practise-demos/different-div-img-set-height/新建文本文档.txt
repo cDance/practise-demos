@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    #demo1 .demo-div1 img{
+        
+    }
+</style>
+<body>
+    <div id="demo1">
+        <div class="demo-div1">
+           <div class="img-wrap">
+               <img src=" " style="width: 200px;height: 200px;background: #08c;"/>
+           </div>
+            
+        </div>
+        <div class="demo-div2">
+            <div class="img-wrap">
+               <img src=" " style="width: 200px;height: 200px;background: #08c;"/>
+           </div>
+        </div>
+        
+    </div>
+</body>
+</html>
