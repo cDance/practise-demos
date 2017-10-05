@@ -17,7 +17,7 @@ $.ajax({
         $('#oTable').append(goodsDOM); //将循环完的goodsDOM 添加到 id为goods 的标签下。
         $('#oTable tr:odd').addClass("gray");
         $('#oTable tr:even').find('td').removeClass("gray2");
-        $("#oTable tr:eq(8)").addClass("blue-border");
+        $("#oTable tr:eq(7)").addClass("blue-border");
         
 //        $("#oTable tr td:eq(0)").addClass("green");
 //        $("#oTable tr td:eq(4)").addClass("green");

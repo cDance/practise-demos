@@ -6,47 +6,25 @@
     <link href="css/reset.css" rel="stylesheet" />
 </head>
 <style>
-    
     * td {margin: 0; padding: 0;font-size: 0; border: 0;}
-    #rank-tab span {
-        display: block;
-        float: left;
-        width: 150px;
-        height: 50px;
-        line-height: 50px;
-        font-size: 22px;
-        text-align: center;
-        background: #ccc;
-        cursor: pointer;
-    }
+    tr {font-style: normal;font-size: 0px;}
     
-    #rank-tab .active {
-        box-sizing: border-box;
-        border-bottom: 3px solid red;
-    }
-    
-    .rank-content {
-        width: 300px;
-    }
-
-    .rank-content table {
+    table {
+         
          width: 300px;  
          border-collapse:collapse;
     }
-    .rank-content table tr {
+    tr {
         background: none;
         height: 30px;
         line-height: 15px;
-        font-size: 0px;
-        font-style: normal;
         text-align: center;
     }
-    .rank-content table tr th {
+    tr th {
         font-size: 15px;
 /*        text-align: center;*/
         font-weight: normal;
     }
-    
     #oTable .team-name-title {
         
         padding-left: 30px;  /*pl30*/
@@ -60,7 +38,7 @@
     #oTable tr td {
         position: relative;
         font-size: 14px;
-        transition: background .125s cubic-bezier(0.6, -0.07, 1, 1);
+/*        font-weight: 700;*/
     }
     #oTable .team-icon {
         position: absolute;
@@ -72,60 +50,70 @@
 /*        background: #09c;*/
     }
     
-    .rank-content .gray {
+    .gray {
         background: #DCDCDC;
     }
-    .rank-content .blue-border {
+    .blue-border {
         border-bottom: 1px solid #08c;
     }
-    .rank-content .gray1 {
+    .gray1 {
         background: #DCDCDC;
     }
-    .rank-content .gray2 {
+    .gray2 {
         background: #D3D3D3;
 /*        opacity: 30;*/
     }
-    .rank-content .bold {
+    .bold {
         font-weight: bold;
     }
     
-    
+    #rank-tab span {
+        display: block;
+        float: left;
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 22px;
+        text-align: center;
+        background: #ccc;
+        cursor: pointer;
+    }
+    #rank-tab .active {
+        border-bottom: 1px solid red;
+    }
+    .rank-content {
+        width: 300px;
+    }
 </style>
 <body >
        <div id="rank-tab" >
            <span class="active">东部联盟</span>
            <span>西部联盟</span>
        </div>
-       <div id="rank-content" class="rank-content">
-           <div>
-                <table id="oTable" border="0">
-                    <tbody>
-                        <tr> 
-                            <th>排名</th>
-                            <th class="team-name-title">球队</th>
-                            <th>胜</th>
-                            <th>负</th>
-                            <th>胜场差</th>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div style="display: none;">
-                <table id="oTable" border="0">
-                    <tbody>
-                        <tr> 
-                            <th>排名</th>
-                            <th class="team-name-title">球队</th>
-                            <th>胜</th>
-                            <th>负</th>
-                            <th>胜场差</th>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            
+       <div id="rank-content" class="rank-content clearfix">
+           <table id="oTable" border="0">
+               <tbody>
+                   <tr style="background: none"> 
+                    <th>排名</th>
+                    <th class="team-name-title">球队</th>
+                    <th>胜</th>
+                    <th>负</th>
+                    <th>胜场差</th>
+                </tr>
+               </tbody>
+           </table>
        
-           
+           <table id="oTable" border="0" style="display: none;">
+               <tbody>
+                   <tr style="background: none"> 
+                    <th>排名</th>
+                    <th class="team-name-title">球队</th>
+                    <th>胜</th>
+                    <th>负</th>
+                    <th>胜场差</th>
+                </tr>
+               </tbody>
+           </table>
        </div>
        
         
@@ -136,8 +124,8 @@
 <script>
      var aSpan=document.getElementById('rank-tab').getElementsByTagName('span');
 //     alert(aSpan.length);
-    var aTable=document.getElementById('rank-content').getElementsByTagName("div");
-//    alert(aTable.length);
+    var aTable=document.getElementById('rank-content').getElementsByTagName("table");
+    alert(aTable.length);
     
     
     for(var i=0;i<aSpan.length;i++){

@@ -4,11 +4,11 @@
         "NbaTeam": [
             {
                 "num":"01",
-                "name":"e-塞尔特人",
+                "name":"塞尔特人",
                 "win":53,
                 "lose":29,
                 "dis":0,
-                "iurl":"./images/cele.jpg"
+                "iurl":"./images/BOS_logo.svg"
             },
             {
                 "num":"02",
@@ -16,111 +16,111 @@
                 "win":50,
                 "lose":32,
                 "dis":0,
-                "iurl":"./images/cele.jpg"
+                "iurl":"./images/CLE_logo.svg"
             },
             {
                 "num":"03",
-                "name":"e-塞尔特人",
+                "name":"奇才",
                 "win":53,
                 "lose":29,
                 "dis":0,
-                "iurl":"./images/cele.jpg"
+                "iurl":"./images/WAS_logo.svg"
             },
             {
                 "num":"04",
-                "name":"e-塞尔特人",
+                "name":"老鹰",
                 "win":53,
                 "lose":29,
                 "dis":0,
-                "iurl":"./images/cele.jpg"
+                "iurl":"./images/ATL_logo.svg"
             },
             {
                 "num":"05",
-                "name":"e-塞尔特人",
+                "name":"猛龙",
                 "win":53,
                 "lose":29,
                 "dis":0,
-                "iurl":"./images/cele.jpg"
+                "iurl":"./images/TOR_logo.svg"
             },
             {
                 "num":"06",
-                "name":"e-塞尔特人",
+                "name":"篮网",
                 "win":53,
                 "lose":29,
                 "dis":0,
-                "iurl":"./images/cele.jpg"
+                "iurl":"./images/BKN_logo.svg"
             },
             {
                 "num":"07",
-                "name":"e-塞尔特人",
+                "name":"热火",
                 "win":53,
                 "lose":29,
                 "dis":0,
-                "iurl":"./images/cele.jpg"
+                "iurl":"./images/MIA_logo.svg"
             },
             {
                 "num":"08",
-                "name":"e-塞尔特人",
+                "name":"黄蜂",
                 "win":53,
                 "lose":29,
                 "dis":0,
-                "iurl":"media/sas"
+                "iurl":"./images/CHA_logo.svg"
             },
             {
                 "num":"09",
-                "name":"e-塞尔特人",
+                "name":"步行者",
                 "win":53,
                 "lose":29,
                 "dis":0,
-                "iurl":"media/sas"
+                "iurl":"./images/IND_logo.svg"
             },
             {
                 "num":"10",
-                "name":"e-塞尔特人",
+                "name":"活塞",
                 "win":53,
                 "lose":29,
                 "dis":0,
-                "iurl":"media/sas"
+                "iurl":"./images/DET_logo.svg"
             },
             {
                 "num":"11",
-                "name":"e-塞尔特人",
+                "name":"76人",
                 "win":53,
                 "lose":29,
                 "dis":0,
-                "iurl":"media/sas"
+                "iurl":"./images/PHI_logo.svg"
             },
             {
                 "num":"12",
-                "name":"e-塞尔特人",
+                "name":"魔术",
                 "win":53,
                 "lose":29,
                 "dis":0,
-                "iurl":"media/sas"
+                "iurl":"./images/ORL_logo.svg"
             },
             {
                 "num":"13",
-                "name":"e-塞尔特人",
+                "name":"公牛",
                 "win":53,
                 "lose":29,
                 "dis":0,
-                "iurl":"media/sas"
+                "iurl":"./images/CHI_logo.svg"
             },
             {
                 "num":"14",
-                "name":"e-塞尔特人",
+                "name":"雄鹿",
                 "win":53,
                 "lose":29,
                 "dis":0,
-                "iurl":"media/sas"
+                "iurl":"./images/MIL_logo.svg"
             },
             {
                 "num":"15",
-                "name":"e-塞尔特人",
+                "name":"尼克斯",
                 "win":53,
                 "lose":29,
                 "dis":0,
-                "iurl":"media/sas"
+                "iurl":"./images/NYK_logo.svg"
             }
             
         ],
