@@ -1,0 +1,729 @@
+.content {
+    width: 1200px;
+    margin: 0 auto; 
+}
+
+.content1 {
+    width: 1220px;
+    min-height: 1300px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+/*头部*/
+
+header {
+    background: #006bb7;
+}
+.header-bg {
+    width: 100%;
+    height: 120px;
+    background: url(../images/header-bg.png) no-repeat;
+}
+.header-top {
+     height :80px;
+     
+}
+
+.header-top-l, .header-top-r{
+    height: 80px;
+    line-height: 80px;
+}
+
+.header-top-l .NBAlogo{
+    padding-top: 10px;
+}
+
+.header-top-l a:hover {
+    text-decoration: none;
+}
+
+.header-top-l .NBAtext1 {
+    padding-left: 8px;
+    font-size: 38px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.header-top-l .NBAtext2 {
+    font-size: 25px;
+    color: #00aeff;
+}
+
+.header-top-r {
+    position: relative;
+    margin-top: -15px;
+    margin-right: 16px;
+}
+
+.header-top-r a {
+    position: relative;
+    padding-left: 5px;
+}
+
+.header-top-r a i {
+    display: block;
+    width: 10px;
+    height: 5px;
+}
+
+.header-top-r .down {
+    position: absolute;
+    top: 0px;
+    right: -12px;
+    background: url(images/triangle_down_new_d66543.png) no-repeat;
+}
+
+.header-top-r .up {
+    position: absolute;
+    top: 0px;
+    right: -12px;
+    background: url(images/triangle_up_new_d66543.png) no-repeat;
+}
+
+
+
+/*
+.header-top-r .a-btn {
+    background: url(images/nbastore.png) no-repeat;
+}
+*/
+
+
+.header-top-r ul {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: -15px;
+    border-radius: 5px;
+}
+.header-top-r  ul li {
+/*    float: left;*/
+    padding-left: 15px;
+    width: 80px;
+    height: 40px;
+    color: #fff;
+    line-height: 40px;
+    text-align: left;
+    background: #002f50;  
+}
+
+.header-top-r  ul li:hover {
+    background: #2464b5;
+}
+
+.header-top-r  ul li a {
+    color: #fff;
+    font-size: 14px;
+    
+}
+
+
+
+
+
+
+/*导航栏*/
+.header-bottom {
+    position: relative;
+    height: 40px;
+}
+
+.header-bottom-left-nav {
+    margin-left: 15px;
+/*    margin-bottom: 5px;*/
+}
+
+ .header-bottom-left-nav ul li {
+    position: relative;
+/*    margin-top: -3px;*/
+    float: left;
+    width: 80px;
+    height: 40px;
+/*    line-height: 35px;*/
+    text-align: center;
+     background: url(../css/images/arrow_down.png) no-repeat 60px 20px;
+} 
+
+/*
+.header-bottom-left-nav ul li a {
+    padding: 5px;
+    color: #fff;
+}
+*/
+.header-bottom-left-nav ul li a {
+/*    padding: 5px 0px;*/
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;  
+    color: #fff;
+}
+
+.header-bottom-left-nav ul li a:hover {
+    color: #00aeff;
+    text-decoration: none;
+}
+
+.header-bottom-left-nav ul li ul {
+    display: none;
+}
+
+.header-bottom-left-nav ul li ul{
+/*    margin-top: 9px;  */
+    margin-left: 10px;
+}
+
+.header-bottom-left-nav ul li ul li {
+    width: 160px;
+    height: 40px;
+    color: #FFF;
+    text-align: left;
+    background: #002f50;
+}
+.header-bottom-left-nav ul > li > ul > li > a {
+    font-size: 14px;
+    padding-left: 15px;
+}
+.header-bottom-left-nav ul > li > ul > li:hover {
+    background: #2464b5;
+}
+
+.header-bottom-left-nav ul li:hover .ul1 {
+   display: block;
+}
+.header-bottom-left-nav ul li ul {
+    position: relative;
+}
+.header-bottom-left-nav ul li ul .subtab-icon {
+    position: absolute;
+    top: -6px;
+    left: 22px;
+    display: block;
+    width: 12px;
+    height: 6px;
+    background: url(../css/images/nav-menu-arrow_4dfd68.png) no-repeat;
+} 
+.header-bottom-left-nav .no-arrow {
+    background: none;
+}
+
+.header-bottom-left-nav ul li .nav-team {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: -335px;
+    width: 1196px;
+    height: 440px;
+    background: #fff;
+    font-size: 100px;
+    z-index: 1627;
+    border: 2px solid #002f50;
+/*    box-sizing: content-box;*/
+}
+
+
+.header-bottom-left-nav ul li:hover .nav-team {
+    display: block;
+}
+
+.header-bottom-left-nav .nav-team .east-team {
+    float: left;
+    display: block;
+    width: 597px;
+    height: 440px;
+/*    background: green;*/
+    border-right: 1px solid #aaa;
+}
+.header-bottom-left-nav .nav-team .team-title {
+    
+    width: 597px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    background: #002f50;
+    
+}
+.header-bottom-left-nav .nav-team .team-area {
+    float: left;
+    font-size: 14px;
+    width: 199px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #f7f5f5;  /*将颜色提取成伪类，方便修改*/
+}
+.header-bottom-left-nav .nav-team li{
+    background: none;
+}
+.header-bottom-left-nav .nav-team .team-list {
+    width: 597px;
+    height: 70px;
+}
+
+.header-bottom-left-nav .nav-team .team-list a {
+    padding-left: 111px;
+    display: block;
+    float: left;
+    width: 88px;
+    height: 70px;
+    line-height: 70px;
+    color: #2866b6;
+    font-size: 14px;
+    background: url(../images/homepageteamlogos.png) no-repeat;
+}
+.header-bottom-left-nav .nav-team .team-list a:hover {
+    background-color: #e5e5e5;   /*如果只用background就会覆盖掉url*/
+}
+
+
+
+/*官方写法*/
+.header-bottom-left-nav .nav-team a.label-hornets {
+    background-position: 35px -922px;
+}
+.header-bottom-left-nav .nav-team a.label-cavaliers {
+    background-position: 38px -492px;;
+}
+.header-bottom-left-nav .nav-team a.label-raptors {
+    background-position: 36px -330px;
+}
+.header-bottom-left-nav .nav-team a.label-hawks {
+    background-position: 37px -839px;
+}
+.header-bottom-left-nav .nav-team a.label-bulls {
+    background-position: 41px -418px;
+}
+.header-bottom-left-nav .nav-team a.label-knicks {
+    background-position: 37px -167px;
+}
+.header-bottom-left-nav .nav-team a.label-wizards {
+    background-position: 39px -1170px;
+}
+.header-bottom-left-nav .nav-team a.label-pistons {
+    background-position: 37px -572px;
+}
+
+.header-bottom-left-nav .nav-team a.label-celtics {
+    background-position: 38px -8px;
+}
+
+.header-bottom-left-nav .nav-team a.label-magic {
+    background-position: 36px -1084px;
+}
+
+.header-bottom-left-nav .nav-team a.label-pacers {
+    background-position: 37px -651px
+}
+
+.header-bottom-left-nav .nav-team a.label-nets {
+    background-position: 38px -93px;
+}
+.header-bottom-left-nav .nav-team a.label-heat {
+    background-position: 37px -1006px;
+}
+.header-bottom-left-nav .nav-team a.label-bucks {
+    background-position: 39px -740px;
+}
+.header-bottom-left-nav .nav-team a.label-sixers {
+    background-position: 39px -248px;
+}
+
+
+.header-bottom-left-nav .nav-team .west-team {
+    float: left;
+    display: block;
+    width: 597px;
+    height: 439px;
+/*    background: -blue;*/
+    border-left: 1px solid #aaa;
+}
+
+.header-bottom-left-nav ul li div ul {
+   margin: 0;  /* ul默认左右有margin*/
+}
+
+
+
+
+
+
+
+.header-bottom-rightbox {
+    width: 100px;
+    background: red;
+}
+
+.header-bottom-rightbox .nav-serch {
+    display: block;
+/*    display: inline-block;*/
+    padding-right: 15px;
+    width: 35px;
+    height: 30px;
+    cursor: pointer;
+    background: url(images/icon_search_white.png) no-repeat center; 
+}
+
+.header-bottom-rightbox .nav-user {
+    display: block;
+    padding-right: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: url(images/icon_user.png) no-repeat; 
+}
+
+
+/*导航栏固定*/
+.nav-fixed {
+    margin: 0 auto;
+    display: none;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: #006bb7;
+    z-index: 888;
+}
+.nav-fixed .NBA-logo {
+    margin-left: 75px;
+    padding-left: 30px;
+    display: block;
+    float: left;
+    width: 16px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 33px;
+    background: url(../css/images/logo-new-small_7ac3d0.png) no-repeat 0px center;
+}
+.nav-fixed {
+    color: #FFF;
+    font-weight: 600;
+    
+    
+}
+.nav-fixed ul{
+/*    padding: 0px 0px;*/
+    margin-left: 230px;
+    
+/*    line-height: 50px;*/
+}
+
+.nav-fixed ul li {
+    
+    float: left;
+    width: 80px;
+/*    height: 50px;*/
+    
+}
+
+.nav-fixed ul>li>a {
+/*    padding: 5px 0px 10px 0px;*/
+    color:#fff;
+    font-size: 16px;
+}
+.nav-fixed ul li a:hover {
+    color: #00aeff;
+    text-decoration: none;
+/*    可合并*/
+}
+
+
+.nav-fixed .nav-user {
+    padding-right: 55px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background: url(images/icon_user.png) no-repeat 0 center; 
+    
+}
+
+
+
+
+
+
+
+/*主体*/
+
+.nba-article {
+    width: 1200px;
+    min-height: 1700px;
+    background-color: -purple;
+}
+
+/* title */
+.article-title-wrap {
+    width: 870px;
+    height: 89px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.article-title-wrap h1.nba-article-title {
+    padding-bottom: 10px;
+    width: 870px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 26px;
+    font-weight: normal;
+}
+
+.article-title-wrap span {
+    display: block;
+    float: left;
+    height: 15px;
+    line-height: 15px;
+}
+
+/* main */
+.article-main {
+    width: 870px;
+    min-height: 1500px;
+}
+
+.article-main span.news-index a {
+    display: block;
+    width: 55px;
+    height: 15px;
+    border-right: 1px solid #ccc;
+}
+
+.article-main span b.news-author {
+    margin-left: 10px;
+    font-weight: normal;
+}
+.article-main span.nba-index {
+    margin-left: 10px;
+}
+
+.article-main span.news-time {
+    width: 120px;
+    text-align: center;
+    border-right: 1px solid #ccc;
+}
+
+
+
+
+.article-main .article-title-wrap a {
+    
+    
+}
+.article-main .article-title-wrap a.news-comment-icon {
+/*    display: block;*/
+    float: right;
+    min-width: 22px;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    background: url(../css/images/pl_icon.png) no-repeat 0 0;
+    padding-left: 27px;
+}
+.article-main .article-title-wrap a:hover {
+    background-position: 0 -77px;
+}
+
+
+/* images */
+.article-main .article-image-wrap {
+    text-align: center;
+    width: 870px;
+}
+
+.article-main img.article-image {
+    margin: 40px 0px 30px 0px;
+    max-width: 870px;
+    max-height: 700px;
+}
+
+
+/* paragraph */
+.article-main .article-para p {
+    padding: 0px 0px 30px 20px;
+    width: 850px;
+    font-size: 16px;
+    background: -#ff5324;
+}
+
+
+/* share */
+.article-share {
+    width: 870px;
+    height: 600px;
+    text-align: center;
+}
+
+
+.article-share span.share-title {
+    display: block;
+    width: 50px;
+    height: 24px;
+    line-height: 30px;
+}
+
+.article-share .share-txt-icon {
+    width: 870px;
+    height: 24px;
+}
+
+.article-share 
+.share-qqzone,
+.share-qq,
+.share-weibo,
+.share-wechat {
+    display: block;
+    margin-left: 5px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../css/images/s_gallery_2012110702.png) no-repeat;
+}
+
+.article-share img.nbashare-qrcore {
+    margin-top: 60px;
+    width: 300px;
+    height: 300px;
+}
+.article-share .share-qqzone{
+    background-position:-62px -228px;
+}
+.article-share .share-qq {
+    background-position: -62px -200px;
+}
+.article-share .share-weibo{
+    background-position: -62px -315px;
+}
+.article-share .share-wechat{
+    background-position: -62px -287px;
+}
+
+
+.article-share -img.nba-app {
+    padding-left: 50px;
+    width: 226px;
+    height: 93px;
+    background-color: red;
+}
+
+/*conment*/
+.user-comment .comment-header {
+    width: 870px;
+    height: 30px;
+    background: green;
+}
+
+.user-comment .comment-header span {
+    display: block;
+}
+
+.user-comment .comment-header .user-comment-title {
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    background-color: green;
+}
+
+.user-comment .comment-header .desc {
+    margin-left: 10px;
+    /*看看盒子模型有没有超*/
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    background-color: -red;
+}
+
+.user-comment .comment-count,
+.tx-comment {
+    margin-left: 30px;
+    min-width: 45px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.user-comment .user-comment-txtarea-wrap {
+    width: 868px;
+    height: 100px;
+    border: 1px solid #08c;
+}
+
+.user-comment .user-comment-txtarea {
+    width: 862px;
+}
+
+.user-comment .user-login {
+    margin: 3px 10px 3px 808px;
+    width: 50px;
+    height: 20px;
+    background-color: #08c;
+    border-radius: 2px;
+}
+
+/* comment-tab */
+.comment-tab-wrap {
+    width: 870px;
+    height: 700px;
+}
+
+.comment-tab {
+    margin-top: 30px;
+    width: 870px;
+    height: 39px;
+    border-bottom: 1px solid #ccc;
+}
+.comment-tab .comment-all,
+.comment-mine {
+    margin-right: 20px;
+    display: block;
+    float: left;
+    font-size: 18px;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.comment-tab .tx-comment {
+    line-height: 40px;
+    font-style: normal;
+    font-size: 12px;
+    color: red;
+}
+
+.comment-tab .active {
+    width: 75px;
+    height: 37px;
+    border-bottom: 2px solid #08c;
+}
+
+.comment-tab .sort-button .heat-sort,
+.time-sort {
+    display: block;
+    width: 30px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.comment-tab .comment-list .sort-button {
+    display: inline-block;
+    margin: 5px 0px 20px 0px;
+    width: 870px;
+    height: 20px;
+    /*          background-color: purple;*/
+    border-radius: 2px;
+}
+
+.comment-tab .sort-button .active1 {
+    width: 30px;
+    height: 20px;
+    background: #08c;
+    color: #fff;
+}
+
+
+/* 侧边栏 */
+.nba-article .side-right-wrap {
+    width: 300px;
+    height: 1700px;
+    background-color: yellow;
+}
