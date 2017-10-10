@@ -1,18 +1,19 @@
-
 .content {
     margin: 0 auto;
 }
+
 
 /*主体*/
 
 .nba-article {
     width: 1200px;
     min-height: 1700px;
-
     background-color: -purple;
 }
 
+
 /* title */
+
 .article-title-wrap {
     width: 870px;
     height: 89px;
@@ -35,7 +36,9 @@
     line-height: 15px;
 }
 
+
 /* main */
+
 .article-main {
     width: 870px;
     min-height: 1500px;
@@ -45,6 +48,7 @@
     display: block;
     width: 55px;
     height: 15px;
+    color: 2D96E9;
     border-right: 1px solid #ccc;
 }
 
@@ -52,6 +56,7 @@
     margin-left: 10px;
     font-weight: normal;
 }
+
 .article-main span.nba-index {
     margin-left: 10px;
 }
@@ -62,15 +67,10 @@
     border-right: 1px solid #ccc;
 }
 
+.article-main .article-title-wrap a {}
 
-
-
-.article-main .article-title-wrap a {
-    
-    
-}
 .article-main .article-title-wrap a.news-comment-icon {
-/*    display: block;*/
+    /*    display: block;*/
     float: right;
     min-width: 22px;
     height: 23px;
@@ -79,12 +79,14 @@
     background: url(../css/images/pl_icon.png) no-repeat 0 0;
     padding-left: 27px;
 }
+
 .article-main .article-title-wrap a:hover {
     background-position: 0 -77px;
 }
 
 
 /* images */
+
 .article-main .article-image-wrap {
     text-align: center;
     width: 870px;
@@ -98,8 +100,10 @@
 
 
 /* paragraph */
+
 .article-main .article-para p {
-    padding: 0px 0px 30px 20px;
+    padding: 0px 0px 30px 0px;
+    text-indent: 2em;
     width: 850px;
     font-size: 16px;
     background: -#ff5324;
@@ -107,12 +111,12 @@
 
 
 /* share */
+
 .article-share {
     width: 870px;
-    height: 600px;
+    height: 550px;
     text-align: center;
 }
-
 
 .article-share span.share-title {
     display: block;
@@ -126,8 +130,7 @@
     height: 24px;
 }
 
-.article-share 
-.share-qqzone,
+.article-share .share-qqzone,
 .share-qq,
 .share-weibo,
 .share-wechat {
@@ -144,32 +147,38 @@
     width: 300px;
     height: 300px;
 }
-.article-share .share-qqzone{
+
+.article-share .share-qqzone {
     background-position: -62px -229px;
 }
+
 .article-share .share-qq {
     background-position: -62px -200px;
 }
-.article-share .share-weibo{
+
+.article-share .share-weibo {
     background-position: -62px -316px;
 }
-.article-share .share-wechat{
+
+.article-share .share-wechat {
     background-position: -62px -287px;
 }
 
-
-.article-share -img.nba-app {
-    padding-left: 50px;
-    width: 226px;
-    height: 93px;
-    background-color: red;
+.article-share .share-qrcore-wrap img .nbashare-qrcore {
+    width: 300px;
+    height: 300px;
 }
 
+.article-share .share-qrcore-wrap img .nba-app {
+    margin: 0 auto;
+}
+
+
 /*conment*/
+
 .user-comment .comment-header {
     width: 870px;
-    height: 30px;
-    background: green;
+    height: 35px;
 }
 
 .user-comment .comment-header span {
@@ -177,10 +186,9 @@
 }
 
 .user-comment .comment-header .user-comment-title {
-    height: 30px;
-    line-height: 30px;
+    height: 35px;
+    line-height: 35px;
     font-size: 20px;
-    background-color: green;
 }
 
 .user-comment .comment-header .desc {
@@ -202,23 +210,34 @@
 
 .user-comment .user-comment-txtarea-wrap {
     width: 868px;
-    height: 100px;
+    height: 118px;
     border: 1px solid #08c;
 }
 
 .user-comment .user-comment-txtarea {
-    width: 862px;
+    width: 848px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    resize: none;
 }
 
 .user-comment .user-login {
-    margin: 3px 10px 3px 808px;
-    width: 50px;
-    height: 20px;
-    background-color: #08c;
+    margin: 3px 10px 3px 790px;
+    width: 70px;
+    height: 25px;
+    background-color: #328BD2;
     border-radius: 2px;
+    border: none;
 }
 
+.user-comment .user-login a {
+    color: #fff;
+}
+
+
 /* comment-tab */
+
 .comment-tab-wrap {
     width: 870px;
     height: 700px;
@@ -230,6 +249,7 @@
     height: 39px;
     border-bottom: 1px solid #ccc;
 }
+
 .comment-tab .comment-all,
 .comment-mine {
     margin-right: 20px;
@@ -261,7 +281,8 @@
     border-radius: 2px;
 }
 
-.comment-list .sort-button .heat-sort, .time-sort {
+.comment-list .sort-button .heat-sort,
+.time-sort {
     width: 30px;
     height: 20px;
     line-height: 20px;
@@ -271,6 +292,7 @@
 .comment-list .sort-button .heat-sort {
     margin-right: 5px;
 }
+
 .comment-list .sort-button .active1 {
     width: 30px;
     height: 20px;
@@ -278,12 +300,42 @@
     color: #fff;
 }
 
-.comment-list .user-comment-list li{
+.comment-list .user-comment-list li {
+    position: relative;
     display: inline-block;
     width: 870px;
     height: 100px;
     border-bottom: 1px solid #ccc;
 }
+
+.comment-list .user-comment-list li i.comment-report {
+
+    position: absolute;
+    top: 20px;
+    right: 0;
+    
+}
+.comment-list .user-comment-list li i a {
+    display: block;   
+    text-indent: 2em;
+    background: url(../css/images/icons1.gif) no-repeat -440px -62px;
+}
+
+.comment-list .user-comment-list li i {
+    display: none;
+
+}
+
+.comment-list .user-comment-list li:hover i {
+    display: block;
+}
+
+.comment-list .user-comment-list li i a:hover {
+    display: block;
+    color: #000;
+    background-position: -440px -42px;
+}
+
 
 .comment-list .user-comment-list img {
     float: left;
@@ -294,44 +346,132 @@
 }
 
 .user-comment-list .user-comment-detail {
-    float: right;
-    width: 830px;
-}
-.user-comment-list .user-comment-detail span {
-    display: block;
-    padding-top: 20px;
+    float: left;
+    margin: 20px 0px 0px 20px;
+    width: 800px;
 }
 
-.user-comment-list .user-comment-detail a.user-name ,.user-time {
-    display: block;
-    padding-left: 10px;
-    padding-bottom: 10px;
-/*    width: 36px;*/
+.user-comment-list .user-comment-detail .user-name,.user-time {
+    padding: 0px 10px 5px 0px;
+    width: auto;
     height: 20px;
     line-height: 20px;
+    text-align: left;
 }
 
 .user-comment-list .user-comment-content {
     display: inline-block;
-    padding-left: 10px;
-    width: 830px;
-    height: 60px;
+    width: 800px;
+    height: 40px;
 }
+
 .user-comment-list .user-comment-content p {
+    display: block;
+    width: 830px;
+    height: 19px;
     font-size: 14px;
+    word-wrap: break-word;
 }
+
 .user-comment-list .user-comment-content a {
     float: left;
-    display: block;
-    width: 40px;
+    width: auto;
+    text-indent: 2em;
     padding-top: 5px;
     margin-right: 5px;
 }
 
+.user-comment-list .user-comment-content a {
+    background: url(../css/images/icons1.gif) no-repeat;
+}
+
+.user-comment-list .user-comment-content a.user-like {
+    /*    padding-left: 20px;*/
+    background-position: -445px -77px;
+}
+
+.user-comment-list .user-comment-content a.user-reply {
+    background-position: -442px -117px;
+}
+
+.user-comment-list .user-comment-content a.user-like:hover {
+    background-position: -445px -97px;
+}
+
+.user-comment-list .user-comment-content a.user-reply:hover {
+    background-position: -442px -137px;
+}
+
+.comment-tab-wrap .load-more {
+    margin-top: -3px;
+    width: 870px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+    color: #000;
+    text-align: center;
+    border: none;
+    background-color: #ccc;
+    cursor: pointer;
+}
+.comment-tab-wrap .load-more:hover {
+    background-color: #b1b1b1;
+
+}
+
 
 /* 侧边栏 */
+
 .nba-article .side-right-wrap {
     width: 300px;
-    height: 1700px;
-    background-color: yellow;
+    height: 1000px;
+}
+
+.side-right-wrap span {
+    display: block;
+    margin-top: 10px;
+    padding-left: 25px;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+    background: #2464b5;
+}
+
+.side-right-wrap .hot-news .video-list li {
+    padding: 10px 10px 10px 11px;
+    height: 59px;
+    font-size: 14px;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.side-right-wrap .hot-news .video-list li:hover {
+    background-color: #e5e5e5;
+    border-left: 1px solid #2464b5;
+}
+
+.side-right-wrap .hot-news .article-list li:hover {
+    display: block;
+    background-color: #e5e5e5;
+    border-left: 1px solid #2464b5;
+}
+
+.side-right-wrap .hot-news .video-list li img {
+    width: 80px;
+    height: 60px;
+}
+
+.side-right-wrap .hot-news .video-list li dd {
+    width: 188px;
+    height: 48px;
+    line-height: 24px;
+}
+
+.side-right-wrap .hot-news .article-list li {
+    display: block;
+    padding-left: 10px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+    overflow: hidden;
 }

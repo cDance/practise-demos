@@ -8,7 +8,7 @@ em, b, i { font-style:normal;}
 li { list-style:none;}
 img { border:none;}
 a { text-decoration:none; color:#244666;}
-a:hover { text-decoration:underline; color:#f50;}
+a:hover { text-decoration:none; color:#f50;}
 table { border-spacing:0; border-collapse:collapse;}
 
 
