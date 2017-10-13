@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ajax从其他连接传输数据</title>
+</head>
+<style>
+#country { 
+    border: 1px solid black; 
+    padding:15px; 
+    background-color: #08c; 
+} 
+ </style>
+
+<body>
+<h1 class="question">你欢喜那个国家啊！</h2>
+<p class="countryOption"><a href="news-1.html #English">英国</a></p>
+<p class="countryOption"><a href="news-1.html #German">德国</a></p>
+<div id="country">Foo</div>
+<a href="index.html" id="back">返回</a>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js" ></script>
+<script>
+    $(function(){
+    
+        $("#country ,#back").hide();
+        
+        $("p.countryOption a").click(function(e){
+           e.preventDefault();
+           $("p.countryOption").slideUp();
+           $("#country").load($(this).attr('href'));
+            
+           $("#country ,#back").fadeIn();
+        
+        })
+        
+    });
+</script>
+</html>
